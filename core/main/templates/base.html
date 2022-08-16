@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <a href="{% url 'fibonacci' %}"><Button>Home</Button></a>
+    <a href="{% url 'about' %}"><Button>About</Button></a>
+    <h1>Fibonacci</h1>
+    <hr>
+</header>
+<body>
+    {% block content %}{% endblock %}
+</body>
+
+<footer style="margin-top: 280px;">
+    <hr>
+    <ul>
+        <li>Phone - +374999999</li>
+        <li>Email - raja@gmail.com</li>
+        <li>Adres - Deli</li>
+    </ul>
+
+</footer>
+</html>
